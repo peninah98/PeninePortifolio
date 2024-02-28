@@ -25,7 +25,7 @@ export default function NavBar(): ReactElement {
         alt="Penine"
         className="h-10 ml-6"
       />
-      <div className="flex flex-wrap md:flex gap-10">{items}</div>
+      <div className="flex flex-wrap md:flex gap-5 md:gap-10">{items}</div>
       <div
         onClick={toggle}
         className="visible md:hidden text-white">
