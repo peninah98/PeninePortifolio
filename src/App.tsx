@@ -4,7 +4,7 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="text-yellow-900">
+    <div>
       <NavBar />
       <About />
     </div>
