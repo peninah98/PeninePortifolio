@@ -1,10 +1,11 @@
 import { ReactElement } from "react"
 import { experiences } from "../util/experienceItems"
+import StyleWrapper from "./StyleWrapper"
 
 function About(): ReactElement {
   const items = experiences.map((item) => <h1 className="py-4">{item}</h1>)
   return (
-    <div className="bg-[#cfcfcf] rounded-tr-[100px] grid md:grid-cols-2 gap-4 md:p-8 my-4">
+    <StyleWrapper className="bg-[#cfcfcf] rounded-tr-[100px] grid md:grid-cols-2 gap-4 md:p-8 my-4">
       <div className="p-10 gap-10">
         <h1 className="text-gray-700 text-3xl">About</h1>
         <div className="font-normal text-lg my-6">
@@ -23,7 +24,7 @@ function About(): ReactElement {
         <h1 className="text-gray-700 text-3xl">Experience</h1>
         <div className="font-normal text-lg my-6 gap-10">{items}</div>
       </div>
-    </div>
+    </StyleWrapper>
   )
 }
 
