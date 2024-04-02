@@ -6,7 +6,7 @@ interface Styles {
 }
 
 function StyleWrapper({ children, className }: Styles): ReactElement {
-  return <div className={`mx-auto px-60 ${className}`}>{children}</div>
+  return <div className={`mx-auto px-20 ${className}`}>{children}</div>
 }
 
 export default StyleWrapper

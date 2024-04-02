@@ -6,8 +6,8 @@ function About(): ReactElement {
   const items = experiences.map((item) => <h1 className="py-4">{item}</h1>)
   return (
     <StyleWrapper className="bg-[#cfcfcf] rounded-tr-[100px] grid md:grid-cols-2 gap-4 md:p-8 my-4">
-      <div className="p-10 gap-10">
-        <h1 className="text-gray-700 text-3xl">About</h1>
+      <div className="md:p-10 gap-10 py-4 px-2">
+        <h1 className="text-gray-700 text-4xl font-bold">About</h1>
         <div className="font-normal text-lg my-6">
           I am software developer who always eager to learn new things. I am
           looking forward to use my skills and expertise to contribute o
@@ -20,8 +20,8 @@ function About(): ReactElement {
           Years of experience
         </div>
       </div>
-      <div className="p-10 gap-10 ">
-        <h1 className="text-gray-700 text-3xl">Experience</h1>
+      <div className="md:p-10 gap-10 p8-4 px-2">
+        <h1 className="text-gray-700 text-4xl font-bold">Experience</h1>
         <div className="font-normal text-lg my-6 gap-10">{items}</div>
       </div>
     </StyleWrapper>

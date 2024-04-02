@@ -1,9 +1,9 @@
-import { ReactElement, useState } from "react"
+import { useState } from "react"
 import { navItems } from "../util/navItems"
 import logo from "/Logo.png"
 import { Menu, X } from "lucide-react"
 
-export default function NavBar(): ReactElement {
+export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const items = navItems.map((item) => (
