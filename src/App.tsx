@@ -1,14 +1,34 @@
-import About from "./Component/About"
-import NavBar from "./Component/NavBar"
-import Project from "./Component/Project"
-import "./index.css"
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom"
 
-function App() {
+import { ReactElement } from "react"
+import Layout from "./Component/Layout"
+import About from "./Component/About"
+import Project from "./Component/Project"
+
+const Routes = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Layout />}>
+      <Route
+        path="/about"
+        element={<About />}
+      />
+      <Route
+        path="/project"
+        element={<Project />}
+      />
+    </Route>
+  )
+)
+
+export default function App(): ReactElement {
   return (
-    <div>
-      <NavBar />
-    </div>
+    <>
+      <RouterProvider router={Routes} />
+    </>
   )
 }
-
-export default App
